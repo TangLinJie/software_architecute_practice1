@@ -135,6 +135,7 @@ class TopicUIFrame extends JFrame
 		this.add(label1);
 		this.add(label2);
 		this.setVisible(true);
+		
 	}
 	void listenerInitial()
 	{
