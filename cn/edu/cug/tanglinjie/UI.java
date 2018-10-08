@@ -51,7 +51,7 @@ class TopicUIFrame extends JFrame
 	{	
 		//界面一些基本信息
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);			
-		this.setSize(400, 450);			
+		this.setSize(500, 500);			
 		this.setTitle("阿里云消息服务");					
 		this.setResizable(false);	
 		//监听器注册
@@ -74,28 +74,28 @@ class TopicUIFrame extends JFrame
 		gridBagConstraints.gridy=0;
 		gridBagConstraints.gridwidth=4;
 		gridBagConstraints.gridheight=4;
-		//senter.setPreferredSize(new Dimension(200,100));
+		senter.setPreferredSize(new Dimension(200,100));
 		gridBagLayout.setConstraints(senter, gridBagConstraints);
 		//设置sent的位置参数
-		JLabel label1=new JLabel("   ");
+		JLabel label1=new JLabel();
 		gridBagConstraints.gridx=4;
 		gridBagConstraints.gridy=0;
 		gridBagConstraints.gridheight=3;
 		gridBagConstraints.gridwidth=4;
-		//label1.setPreferredSize(new Dimension(100,75));
+		label1.setPreferredSize(new Dimension(100,75));
 		gridBagLayout.setConstraints(label1, gridBagConstraints);
 		gridBagConstraints.gridx=4;
 		gridBagConstraints.gridy=3;
 		gridBagConstraints.gridheight=1;
 		gridBagConstraints.gridwidth=4;
-		//sent.setPreferredSize(new Dimension(100,25));
+		sent.setPreferredSize(new Dimension(100,25));
 		gridBagLayout.setConstraints(sent, gridBagConstraints);
 		//设置receiver位置参数
 		gridBagConstraints.gridx=0;
 		gridBagConstraints.gridy=4;
 		gridBagConstraints.gridwidth=4;
 		gridBagConstraints.gridheight=4;
-		//js.setPreferredSize(new Dimension(200,100));
+		js.setPreferredSize(new Dimension(200,100));
 		gridBagLayout.setConstraints(js, gridBagConstraints);
 		//设置receive位置参数
 		JLabel label2=new JLabel();
@@ -103,27 +103,27 @@ class TopicUIFrame extends JFrame
 		gridBagConstraints.gridy=4;
 		gridBagConstraints.gridwidth=4;
 		gridBagConstraints.gridheight=3;
-		//label2.setPreferredSize(new Dimension(100,75));
+		label2.setPreferredSize(new Dimension(100,75));
 		gridBagLayout.setConstraints(label2, gridBagConstraints);
 		gridBagConstraints.gridx=4;
 		gridBagConstraints.gridy=7;
 		gridBagConstraints.gridheight=1;
 		gridBagConstraints.gridwidth=4;
-		//receive.setPreferredSize(new Dimension(100,25));
+		receive.setPreferredSize(new Dimension(100,25));
 		gridBagLayout.setConstraints(receive, gridBagConstraints);
 		//设置createQueue位置参数
 		gridBagConstraints.gridx=0;
 		gridBagConstraints.gridy=8;
 		gridBagConstraints.gridheight=1;
 		gridBagConstraints.gridwidth=4;
-		//createQueue.setPreferredSize(new Dimension(200,25));
+		createQueue.setPreferredSize(new Dimension(200,25));
 		gridBagLayout.setConstraints(createQueue, gridBagConstraints);
 		//设置create位置参数
 		gridBagConstraints.gridx=4;
 		gridBagConstraints.gridy=8;
 		gridBagConstraints.gridheight=1;
 		gridBagConstraints.gridwidth=4;
-		//create.setPreferredSize(new Dimension(100,25));
+		create.setPreferredSize(new Dimension(100,25));
 		gridBagLayout.setConstraints(create, gridBagConstraints);
 		
 		this.add(senter);
